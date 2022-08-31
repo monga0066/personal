@@ -29,7 +29,7 @@ export  const Todos = ({mode}) => {
         id="mybox"
         className="form-control"
         rows="8"
-    style={{backgroundColor: mode==="dark" ? "#042743" : "white", color: mode==="dark"?"white":"black"}}
+    style={{backgroundColor: mode==="dark" ? "grey" : "white", color: mode==="dark"?"white":"black"}}
 
       ></textarea>
       <button

@@ -33,7 +33,7 @@ function App() {
   return (
     
     <>
-    <Header title="Text Server" mode={mode} toggleMode={toggleMode}/>
+    <Header title="Text Server" mode={mode} toggleMode={toggleMode} />
     <div className=' container my-3'>
      <Routes>
           
