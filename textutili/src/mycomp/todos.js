@@ -1,16 +1,22 @@
 import React, { useState } from "react";
-export  const Todos = ({mode}) => {
+export  const Todos = ({mode,showalert}) => {
   const [text, settext] = useState("");
   const handleUPclick = () => {
     let change = text.toUpperCase();
     settext(change);
+    showalert("Change into UpperCase","success")
+
   };
   const handleLWclick = () => {
     let change = text.toLowerCase();
     settext(change);
+    showalert("Change into LowerCase","success")
+
   };
   const handleclear = () => {
     settext("");
+    showalert("All text Clear","success")
+
   };
   const handlechange = (e) => {
     settext(e.target.value);
@@ -19,6 +25,8 @@ export  const Todos = ({mode}) => {
     let s = document.getElementById("mybox");
     s.select();
     navigator.clipboard.writeText(s.value);
+    showalert("All text is Copy","success")
+
   };
   return (
     <div className="container"  style={{color: mode==="dark"?"white":"black"}}>
@@ -29,10 +37,11 @@ export  const Todos = ({mode}) => {
         id="mybox"
         className="form-control"
         rows="8"
-    style={{backgroundColor: mode==="dark" ? "grey" : "white", color: mode==="dark"?"white":"black"}}
+    style={{backgroundColor: mode==="dark" ? "#042743" : "white", color: mode==="dark"?"white":"black"}}
 
       ></textarea>
       <button
+      disabled={text.length===0}
         onClick={handleUPclick}
         type="button"
         className="btn btn-primary mx-2 my-2"
@@ -40,16 +49,20 @@ export  const Todos = ({mode}) => {
         Uppercase
       </button>
       <button
+            disabled={text.length===0}
+
         onClick={handleLWclick}
         type="button"
         className="btn btn-primary mx-2"
       >
         Lowercase
       </button>
-      <button onClick={handlecopy} type="button" className="btn btn-primary mx-2">
+      <button       disabled={text.length===0}
+ onClick={handlecopy} type="button" className="btn btn-primary mx-2">
         Copy text
       </button>
-      <button onClick={handleclear} type="button" className="btn btn-primary mx-2">
+      <button       disabled={text.length===0}
+ onClick={handleclear} type="button" className="btn btn-primary mx-2">
         Clear
       </button>
 
@@ -63,7 +76,7 @@ export  const Todos = ({mode}) => {
         </p>
         <h3>Preview</h3>
         <div className="preview">
-        <p>{text.length>0 ?text:"Enter Text in the input for the prview"}</p>
+        <p>{text.length>0 ?text:"Nothing to preview !!"}</p>
 
         </div>
       </div>

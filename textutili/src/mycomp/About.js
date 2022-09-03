@@ -1,8 +1,9 @@
 import React from 'react'
-
-export  const About = () => {
+import "./About.css"
+export  const About = ({mode}) => {
   return (
-    <div>
+    <div className='container' style={{color: mode==="dark"?"white":"black"}}>
+    <h2>About Us </h2>
       <div className="accordion" id="accordionExample">
   <div className="accordion-item">
     <h2 className="accordion-header" id="headingOne">
