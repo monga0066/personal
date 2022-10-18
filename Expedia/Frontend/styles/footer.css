@@ -1,0 +1,76 @@
+
+  .footerHeadings{
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-synthesis: none;
+    list-style: none;
+    border-style: solid;
+    border-width: 0;
+    background-repeat: no-repeat;
+    margin: 10px 0 10px ;
+    
+    box-sizing: inherit;    
+    color: #141d38;
+    font-size: 1rem;
+    font-weight: 500;
+    /* line-height: 1.125rem; */
+  }
+  .footerSection{
+    display: block;
+    gap: 20px;
+  }
+  .footerLinks {
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-synthesis: none;
+    list-style: none;
+    border-style: solid;
+    border-width: 0;
+    background-repeat: no-repeat;
+    box-sizing: inherit;
+    touch-action: manipulation;
+    background-color: transparent;
+    color: #3662d8;
+    font-weight: 400;
+    text-decoration: none;
+    width: 100%;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 16px;   
+    margin: 20px 0 0;
+    line-height: 1rem;
+    display: flex;
+  }
+  .footerLinks:hover {
+    text-decoration: underline;
+  }
+  #footerMain {
+    display: grid;
+    width: 90%;
+    margin: 50px auto;
+    grid-template-columns: repeat(5, 1fr);  
+    gap: 30px;  
+  }
+  #footerFt {
+    margin-top: 10px;
+  }
+  #footerEnd{
+    border-top: 0.1px solid rgb(214, 206, 206);
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    
+  }
+  .footerCondition{
+    
+font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+border-style: solid;
+border-width: 0;
+font-size: 0.75rem;
+font-synthesis: style;
+color: #343B53;
+text-align: center;
+font-weight: 400;
+
+
+  }

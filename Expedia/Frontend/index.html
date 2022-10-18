@@ -1,0 +1,231 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/Expedia-Logo_favicon.png">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <script src="https://kit.fontawesome.com/583f110147.js" crossorigin="anonymous"></script>
+    <title>Expedia Travel: Vacation Homes, Hotels, Car Rental, Flights and More</title>
+</head>
+<body>
+    <div id="navbar">
+        <!-- add nvabar here -->
+    </div>
+    <hr>
+   <!-- search box part -->
+   <div id="mainAm">
+    <div id="part1Am">
+        <a href=""><p>Stays</p></a>
+        <a href=""><p>Flights</p></a>
+        <a href=""><p>Cars</p></a>
+        <a href=""><p>Packages</p></a>
+        <a href=""><p>Things to do</p></a>
+        <a href=""><p>Cruises</p></a>
+    </div>
+    <hr>
+    <div id="part2Am">
+    <div id="subPart1Am">
+        <input type="text" name="" id="GoingTo" placeholder="Going to">
+        <div>
+            <input type="checkbox">
+            <label for="">Add a flight</label>
+            <input type="checkbox">
+            <label for="">Add a car</label>
+            <button onclick="clickForDestination()" id="search">Search</button>
+        </div>
+      
+    </div>
+    <div id="subPart2Am">
+        <label for="" class="Label">Check-in</label>
+        <input min="2022-07-01" max="2023-12-31" type="date">
+    </div>
+    <div id="subPart3Am">
+        <p onclick="roomTravelersFun()" id="DefaultAdultsNo">1 room, 2 travelers</p>
+        <div id="APDP"></div>
+        <label for="" class="Label">Check-out</label>
+        <input type="date" min="2022-07-01" max="2023-12-31">
+    </div>
+
+    </div>
+   </div>
+
+       <!-- app details box -->
+       <div id="appboxAm">
+        <div id="appPart1">
+            <img src="https://a.travel-assets.com/mad-service/footer/bnaBanners/BEX_ROME_iStock_72dpi.jpg" alt="">
+        </div>
+        <div id="appboxPart2">
+            <div>
+                <h1>Our app takes you further</h1>
+                <p>When you book on the app you can save up to 25% on select hotels while earning double the points with every booking. With these app deals you'll save even more on trips, and that means you can take more trips, and manage it all on the go.</p>
+            </div>
+            <div>
+                <h3>Text yourself a download link for easy access</h3>
+                <select name="" id="">
+                    <option value="+91,India">India +91</option>
+                    <option value="+54,Argentina">Argentina +54</option>
+                    <option value="+61,Australia">Australia +61</option>
+                    <option value="+43,Austria">Austria +43</option>
+                    <option value="+32,Belgium">Belgium +32</option>
+                    <option value="+55,Brazil">Brazil +55</option>
+                    <option value="+1,Canada">Canada +1</option>
+                    <option value="+45,Denmark">Denmark +45</option>
+                    <option value="+358,Finland">Finland +358</option>
+                    <option value="+33,France">France +33</option>
+                    <option value="+49,Germany">Germany +49</option>
+                    <option value="+852,HongKong">Hong Kong SAR +852</option>
+                    <option value="+353,Ireland">Ireland +353</option>
+                </select>
+                <input type="number" name="" id="Phone_num" placeholder="Phone number">
+                <button onclick="getTheApp()">Get the app</button>
+                <p class="appInfo">By providing your number, you agree to receive a one-time automated text message with a link to get the app. Standard text message rates may apply.</p>
+            </div>
+        </div>
+        <div id="appboxPart3">
+            <img src="https://a.travel-assets.com/mad-service/qr-code/footer_qr_hp/1_QR_FOOTER_BNA_HP.png" alt="">
+            <p>Scan the QR code</p>
+        </div>
+       </div>
+
+       <!-- new part -->
+       <div id="poster">
+        <h1>Get more to go <br> more</h1>
+        <p>Members can double dip on rewards. Sign up for <br> free and start getting points on top of airline <br> miles.</p>
+        <button>See flight deals</button>
+        <img src="https://a.travel-assets.com/travel-assets-manager/5348/MTT-HP-Hero-D-928x398.jpg" alt="">
+
+       </div>
+    <!-- heldest part -->
+      <h1 class="heading">Here to help keep you on the move</h1>
+      <div id="helpdeskAm">
+        <div class="subDivAm">
+            <div>
+                <h3>Change or cancel a trip</h3>
+                <p>Make updates to your itinerary or cancel a booking</p>
+            </div>
+            <li class="fa-solid fa-pen"></li>
+        </div>
+        <div class="subDivAm">
+            <div>
+                <h3>Use a credit or coupon</h3>
+                <p>Apply a coupon code or credit to a new trip</p>
+            </div>
+            <i class="fa-solid fa-comments-dollar"></i>
+        </div>
+        <div class="subDivAm">
+            <div>
+                <h3>Track your refund</h3>
+                <p>Check the status of a refund currently in progress</p>
+            </div>
+            <i class="fa-brands fa-rocketchat"></i>
+        </div>
+      </div>
+
+    <!-- three image section -->
+    <div id="threeImageAm">
+        <div>
+            <img src="https://a.travel-assets.com/travel-assets-manager/4943-madetotravel/MTT-HP-Editorial-3up-384x256-5.jpg" alt="">
+            <p>VIP ACCESS</p>
+            <h3>The view looks even better as a VIP</h3>
+        </div>
+        <div>
+            <img src="https://a.travel-assets.com/travel-assets-manager/3301-road-trips/NORAM-Merch-HP-Editorial-3up-384x256-1.jpg" alt="">
+            <p>GRAB THE KEYS</p>
+            <h3>You need a change of scenery</h3>
+        </div>
+        <div>
+            <img src="https://a.travel-assets.com/travel-assets-manager/cmct-5183/US-CA-MX-HP-Editorial-3up-384x256.jpg" alt="">
+            <P>BROADEN YOUR HORIZONS</P>
+            <h3>There's a whole lot of world out there—go see more of it</h3>
+        </div>
+    </div>
+
+     <!-- two Images section -->
+     <div id="twoImageAm">
+        <div>
+            <img src="https://a.travel-assets.com/travel-assets-manager/cmct-3224/US_LP_theme5_382x215_2x.jpg" alt="">
+            <p>FOR THE LOVE OF SUMMER</p>
+                <h3>Chase the sun to someplace extraordinary</h3>
+        </div>
+        <div>
+            <img src="https://a.travel-assets.com/travel-assets-manager/cmct-3224/US_LP_theme3_382x215_2x.jpg" alt="">
+            <p>YOUR BEACH BLISS AWAITS</p>
+                <h3>Experience ultimate relaxation with a coastal getaway</h3>
+        </div>
+     </div>
+    <!-- scroll bar part -->
+    <div class="scrollDiv">
+        <p>Be inspired and discover more with Expedia</p>
+    </div>
+    <div id="scrollbar">
+        <div>
+            <h3>Hotel deals on top domestic destinations</h3>
+            <p>Hotels</p>
+            <p>New York hotels</p>
+            <p>Miami hotels</p>
+            <p>Chicago hotels</p>
+            <p>Myrtle Beach hotels</p>
+            <p>Key West hotels</p>
+            <h3>Book hotels internationally</h3>
+            <p>Cabo San Lucas hotels</p>
+            <p>Paris hotels</p>
+            <p>Cancun hotels</p>
+            <p>Tokyo hotels</p>
+            <p>Los Cabos hotels</p>
+            <h3>Top Domestic Flights</h3>
+            <p>Flights to Las Vegas</p>
+            <p>Flights to New York</p>
+            <p>Flights to New York</p>
+            <p>Flights to Maui</p>
+            <p>Flights to Dallas</p>
+            <h3>Top International Flights</h3>
+            <p>Flights to Puerto Rico</p>
+            <p>Flights to Kannur</p>
+            <p>Flights to London</p>
+            <p>Flights to Manila</p>
+            <p>Flights to Bali</p>
+            <h3>Save today on vacation packages</h3>
+            <p>Las Vegas vacation packages</p>
+            <p>New York vacation packages</p>
+            <p>Disneyland vacation packages</p>
+            <p>Orlando vacation packages</p>
+            <p>Key West vacation packages</p>
+            <h3>Top places to visit domestically</h3>
+            <p>Visit Los Angeles</p>
+            <p>Visit New York</p>
+            <p>Visit Orlando</p>
+            <p>Visit Atlanta</p>
+            <p>Visit Miami</p>
+            <h3>Visit places internationally</h3>
+            <p>Visit the Bahamas</p>
+            <p>Visit Mexico</p>
+            <p>Visit Cancun</p>
+            <p>Visit Australia</p>
+            <p>Visit Aruba</p>
+        </div>
+        <div>
+            <p>Hotels</p>
+            <p>Las Vegas hotels</p>
+            <p>Las Vegas hotels</p>
+            <p>New York hotels</p>
+            <p>Orlando hotels</p>
+            <p>Miami hotels</p>
+            <p>Los Angeles hotels</p>
+            <p>Chicago hotels</p>
+            <p>hotels Nashville </p>
+            <p>Myrtle Beach hotels</p>
+            <p>New Orleans hotels</p>
+            <p>Key West hotels</p>
+            <p>San Francisco hotels</p>
+
+        </div>
+    </div>
+    
+    <div id="footer"></div>
+</body>
+</html>
+<script src="./scripts/index.js" type="module"></script>
+<script src="./scripts/navbar.js" type="module"></script>

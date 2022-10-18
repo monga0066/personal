@@ -1,0 +1,467 @@
+*{  
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    color:#343b53;
+    font-family:  "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* search part styling */
+#mainAm{
+    width: 80%;
+    height: 300px;
+    border: 1px solid grey;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+#part1Am{
+    width: 50%;
+    height: 13%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#part1Am > a >  p{
+    /* margin-top: 30px; */
+}
+
+
+#part1Am > a{
+    text-decoration: none;    
+}
+#part1Am > a:hover{
+    text-decoration: underline;
+    color: blue;
+    font-size: 1rem;
+}
+#part2Am{
+    width: 100%;
+    height: 83%;
+    display: flex;
+}
+
+#subPart1Am{
+    width: 60%;
+}
+
+#subPart1Am > input{
+    width: 85%;
+    padding: 16px;
+    margin: 55px 0px 0px 90px;
+    border-radius: 10px;
+}
+#subPart1Am > div{
+    width: 100%;
+    height: 50%;
+}
+#subPart1Am > div > input{
+    margin: 30px 0px 0px 90px;
+}
+#subPart1Am > div > button{
+    /* display: block; */
+    /* margin: auto; */
+    width: 22%;
+    padding: 17px;
+    margin: 0px 0px 0px 503px;
+    font-size: 15px;
+    font-weight: bold;
+    color:white;
+    background-color: #3662D8;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#subPart2Am{
+    width: 25%;
+    margin-top: 54px;
+    margin-left: 14px;
+
+}
+#subPart2Am  >input{
+    width: 97%;
+    padding: 12px;
+    margin-right: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+}
+#subPart3Am{
+    width: 25%;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+#subPart3Am  >input{
+    width: 90%;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+
+}
+#subPart3Am > p{
+    color: blue;
+    text-align: end;
+    margin: 21px 60px 15px 0px ;
+    cursor: pointer;
+}
+.Label{
+    position: absolute;
+    margin: 4px 0px 0px 140px;
+    font-size: 14px;
+    cursor: pointer;
+    color: rgb(108, 102, 102);
+}
+
+/* app box styling */
+#appboxAm{
+    width: 90%;
+    /* height: 300px; */
+    display: flex;
+    border: 2px solid rgb(223, 222, 222);
+    margin: auto;
+    margin-top: 55px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#appPart1{
+    width: 35%;
+}
+#appPart1 > img{
+    width: 100%;    
+}
+#appboxPart2{
+    width: 52%;
+    height: 100%;
+    /* border: 2px solid green; */
+    margin: 0 30px;
+}
+#appboxPart2 > div > h1{
+    /* margin-left: 2px; */
+}
+#appboxPart2 > div:first-child{
+    width: 100%;
+    height: 40%;
+    /* border: 2px solid black; */
+}
+
+#appboxPart2 > div:first-child > p{
+    color: #343B53;
+    margin: 10px 0;
+}
+
+#appboxPart2 > div:last-child{
+    width: 100%;
+    height: 53%;
+}
+
+#appboxPart2 > div:last-child > input,button{
+    padding: 10px;
+    /* margin-right: 10px; */
+}
+#appboxPart2 > div:last-child > label{
+    position: absolute;
+    font-size: .7rem;
+    /* margin:8px 0px 0px 8px; */
+}
+#appboxPart2 > div:last-child > select{
+    width: 34%;
+    height: 38px;
+}
+#appboxPart2 > div:last-child > select > option{
+    font-size: 1rem;
+    
+}
+
+#phone{
+    /* margin-left: 2px; */
+}
+#appboxPart2 > div:last-child > button{
+    width: 25%;
+    color: white;
+    background-color:  #3662D8;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#appboxPart2 > div:last-child > p{
+    color: #343B53;
+    margin: 3px 0;
+    font-size: .8rem;
+}
+#appboxPart2 > div:last-child > h3{
+    /* margin-left: 2px; */
+    margin: 0 0 10px;
+}
+#appboxPart3{
+    width: 17%;
+    height: 100%;
+    /* border: 2px solid pink; */
+    text-align: center;
+}
+#appboxPart3 > img{
+    width: 100%;
+    /* height: 155px; */
+    display: block;
+    margin: auto;
+    /* margin-top: 30px; */
+}
+#appboxPart3  > p{
+    /* margin: -3px; */
+}
+
+/* day two work  */
+/* new part */
+#poster{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+#poster > img{
+    width: 100%;
+    height: 515px;
+    border-radius: 10px;
+}
+#poster > h1{
+    position: absolute;
+    margin: 120px 0px 0px 70px;
+    font-size: 38px;
+    color: white;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
+}
+#poster > p{
+    position: absolute;
+    margin: 230px 0px 0px 70px;
+    color: white;
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+#poster > button{
+    position: absolute;
+    width: 11%;
+    padding: 15px;
+    color: white;
+    background-color: #3662D8;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 313px 0px 0px 70px ;
+    cursor: pointer;
+}
+/* heldesk part styling */
+.heading{
+    margin: 70px 0px 0px 70px;
+    font-size: 2rem;
+    font-weight: 790;
+}
+ #helpdeskAm{
+    width: 80%;
+    margin: 20px auto;
+    display: flex; 
+    gap: 20px;   
+ }
+ .subDivAm{
+    width: 33%;
+    display: flex;
+    border: 1px solid #a7a7a7c9;
+    /* margin-left: 20px; */
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+ }
+ .fa-solid fa-circle-dollar{
+    background-color: black;
+ }
+
+
+/* three image styling */
+#threeImageAm{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    gap: 20px
+
+}
+#threeImageAm > div{    
+    cursor: pointer;
+}
+#threeImageAm > div > img{
+    width: 100%;
+    /* height: 255px; */
+    border-radius: 10px;
+}
+#threeImageAm > div > p,
+#twoImageAm > div>p{
+    font-size: 13px;
+    margin: 10px;
+    font-size: 'Centra No2', sans-serif;
+    line-height: 6px;
+}
+#threeImageAm > div > h3,
+#twoImageAm > div > h3{
+   font-size: 1.1rem;
+   font-weight: 600;
+   margin: 10px;
+   font-family: 'Centra No2', sans-serif;
+   letter-spacing: .4px;
+}
+
+/* two images section styling */
+#twoImageAm{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+}
+#twoImageAm > div{
+    width: 48%;
+    height: 100%;
+    cursor: pointer;
+}
+#twoImageAm > div:first-child{
+    /* margin-right: 39px; */
+}
+#twoImageAm > div > img{
+    width: 100%;
+    /* height: 324px; */
+    border-radius: 10px;
+}
+
+/* scroll bar styling */
+.scrollDiv{
+    width: 90%;
+    border: 1px solid #a7a7a7c9;
+    margin: auto;
+    margin-top: 70px;
+}
+.scrollDiv > p{
+    margin: 15px 0px 20px 15px;
+}
+.scrollDiv > p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+}
+#scrollbar{
+    width: 88%;
+    height: 500px;
+    border: 1px solid #a7a7a7c9;
+    margin: auto;
+    overflow-y: auto;
+    display: flex;
+    padding: 15px;
+    cursor: pointer;
+}
+#scrollbar > div{
+    /* margin-right: 110px; */
+    margin: auto;
+
+}
+
+#scrollbar > div > p{
+    color: #3662d8;
+    font-size: .9rem;
+    font-weight: 500;
+    margin: 10px;
+}
+
+
+/* this is my js styling */
+
+#parentAm{
+    width: 25%;
+    /* height: 60%; */
+    background-color: #FFFFFF;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+#parentAm > h3{
+    text-align: start;
+    color: black;
+    margin-left: 20px;
+    font-weight: 300;
+
+}
+#parentAm > button{
+    height: 15%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    background-color: #3662D8;
+    color: white;
+    border: none;
+    width: 95%;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+#parentAm > h2{
+    font-size: 1rem;
+    text-align: end;
+    margin-right: 10px;
+    color: #3662D8;
+    cursor: pointer;
+
+}
+.subDiv{
+  width: 100%;
+  /* height: 50%; */
+  /* border: 2px solid green; */
+  display: flex;
+}
+.subDiv2{
+    width: 50%;
+    /* height: 100%; */
+    padding: 10px;
+    /* border: 2px solid purple; */
+}
+.subDiv2 > select{
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.subDiv2 > select > option{
+    font-size: 1rem;
+}
+.insideSubDiv3{
+    width: 90%;
+    /* height: 50%; */
+    /* border: 2px solid brown; */
+    display: flex;
+    justify-content: space-evenly;
+}
+.insideSubDiv3 > p:nth-child(2){
+    font-size: 1rem;
+    margin:40px 20px 0px 20px;
+}
+.insideSubDiv3 > p:first-child,.insideSubDiv3 > p:last-child{
+    font-size: 1.3rem;
+    border: 2px solid  #a7a7a7c9;
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#DemoDiv{
+    width: 93%;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
